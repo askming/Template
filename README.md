@@ -1,7 +1,5 @@
-Template
-========
-
 Latex templates.
+========
 
 ## 1. UTSPH Phd proposal/thesis template (biostatistics)
 
