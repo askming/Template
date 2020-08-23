@@ -1,0 +1,102 @@
+\documentclass[12pt, landscape, letterpaper]{article}
+
+% necessary packages
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{verbose, tmargin=3cm, bmargin=2cm, lmargin=1.5cm, rmargin=1.5cm}
+
+% set the font
+\usepackage{fontspec}
+\setmainfont{Print Dashed}
+%\setmainfont{Print Clearly}
+% \setmainfont{Andika}
+\usepackage{anyfontsize}
+% increase baseline skip
+\usepackage{setspace}
+\setstretch{1.5}
+
+% define height of lowercase letters
+\newcommand{\lowercaseheight}{1.7ex}
+% define height of uppercase letters
+\newcommand{\uppercaseheight}{3.1ex}
+% define depth of descenders
+\newcommand{\descenderdepth}{-0.8ex}
+    % you may add more values here and then use them in the {tikzpicture}
+    % to add more line to your grid
+
+
+% package to have a "every line" hook
+\usepackage{lineno}
+
+\newenvironment{drillsheet}{%
+    % let the "line numbers" start directly at the text
+    \setlength\linenumbersep{0pt}%
+    % let the "line numbers" be the grid
+    \renewcommand{\thelinenumber}{%
+        \begin{tikzpicture}[overlay]
+                % baseline
+                \draw (0,0) -- ++(\textwidth,0);
+                % lowercase height
+                \draw [dotted] (0,\lowercaseheight) -- ++(\textwidth,0);
+                % uppercase height
+                \draw (0,\uppercaseheight) -- ++(\textwidth,0);
+                % descender depth
+                \draw [ultra thin] (0,\descenderdepth) -- ++(\textwidth,0);
+        \end{tikzpicture}%
+    }%
+    % the font and color of the numbers must be set explicitly
+    \renewcommand\linenumberfont{\normalfont\color{black}}
+    % start "line numbering", i.e. the grid
+    \begin{linenumbers}%
+        % set text color to gray
+        \color{black!50}%
+}{
+    % end "numbering", i.e. the grid
+    \end{linenumbers}%
+}
+
+\newenvironment{fakedisplaymath}{%
+   \begin{center}%
+   $\displaystyle
+}{%
+   $%
+   \end{center}%
+}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+{\bf Name\ \underline{\hskip 200pt}\hskip 200pt}{\bf Date\
+\underline{\hskip 200pt}}\\
+
+\Huge
+\begin{drillsheet}
+    {\fontsize{40}{50} \selectfont Aa Aa Aa Aa Aa Aa Aa Aa Aa Aa Aa Aa}\\
+    {\fontsize{40}{50} \selectfont Bb Bb Bb Bb Bb Bb Bb Bb Bb Bb Bb Bb}\\
+    {\fontsize{40}{50} \selectfont Cc Cc Cc Cc Cc Cc Cc Cc Cc Cc Cc Cc Cc}\\
+    {\fontsize{40}{50} \selectfont Dd Dd Dd Dd Dd Dd Dd Dd Dd Dd Dd Dd}\\
+    {\fontsize{40}{50} \selectfont Ee Ee Ee Ee Ee Ee Ee Ee Ee Ee Ee Ee Ee}\\
+    {\fontsize{40}{50} \selectfont Ff Ff Ff Ff Ff Ff Ff Ff Ff Ff Ff Ff Ff Ff Ff}\\
+    {\fontsize{40}{50} \selectfont Gg Gg Gg Gg Gg Gg Gg Gg Gg Gg Gg Gg}\\
+    {\fontsize{40}{50} \selectfont Hh Hh Hh Hh Hh Hh Hh Hh Hh Hh Hh}\\
+    {\fontsize{40}{50} \selectfont Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii Ii}\\
+    {\fontsize{40}{50} \selectfont Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj Jj}\\
+    {\fontsize{40}{50} \selectfont Kk Kk Kk Kk Kk Kk Kk Kk Kk Kk Kk Kk Kk}\\
+    {\fontsize{40}{50} \selectfont Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll Ll}\\
+    {\fontsize{40}{50} \selectfont Mm Mm Mm Mm Mm Mm Mm Mm Mm}\\
+    {\fontsize{40}{50} \selectfont Nn Nn Nn Nn Nn Nn Nn Nn Nn Nn Nn}\\
+    {\fontsize{40}{50} \selectfont Oo Oo Oo Oo Oo Oo Oo Oo Oo Oo Oo Oo}\\
+    {\fontsize{40}{50} \selectfont Pp Pp Pp Pp Pp Pp Pp Pp Pp Pp Pp Pp Pp}\\
+    {\fontsize{40}{50} \selectfont Qq Qq Qq Qq Qq Qq Qq Qq Qq Qq Qq Qq}\\
+    {\fontsize{40}{50} \selectfont Rr Rr Rr Rr Rr Rr Rr Rr Rr Rr Rr Rr Rr}\\
+    {\fontsize{40}{50} \selectfont Ss Ss Ss Ss Ss Ss Ss Ss Ss Ss Ss Ss Ss Ss}\\
+    {\fontsize{40}{50} \selectfont Tt Tt Tt Tt Tt Tt Tt Tt Tt Tt Tt Tt Tt Tt}\\
+    {\fontsize{40}{50} \selectfont Uu Uu Uu Uu Uu Uu Uu Uu Uu Uu Uu Uu}\\
+    {\fontsize{40}{50} \selectfont Vv Vv Vv Vv Vv Vv Vv Vv Vv Vv Vv Vv}\\
+    {\fontsize{40}{50} \selectfont Ww Ww Ww Ww Ww Ww Ww Ww Ww}\\
+    {\fontsize{40}{50} \selectfont Xx Xx Xx Xx Xx Xx Xx Xx Xx Xx Xx Xx}\\
+    {\fontsize{40}{50} \selectfont Yy Yy Yy Yy Yy Yy Yy Yy Yy Yy Yy Yy Yy}\\
+    {\fontsize{40}{50} \selectfont Zz Zz Zz Zz Zz Zz Zz Zz Zz Zz Zz Zz Zz}   
+\end{drillsheet}
+\end{document}

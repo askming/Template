@@ -1,0 +1,30 @@
+\documentclass{ctexart}
+\usepackage[letterpaper,hmargin={2cm},vmargin={2cm}]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\fancyhf{}
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+\begin{document}
+%作文纸1
+ 
+\begin{tikzpicture}[scale=0.75]
+\foreach \m in {1,2,...,21}\draw(\m,0) -- (\m,{20*1.4-0.4});
+\foreach \n in {1,2,...,19}\draw[fill=white,line width=0.4pt](0,{1.4*\n-0.4})rectangle(21,{1.4*\n});
+\draw[thick](0,0)rectangle(21,{20*1.4-0.4});
+\end{tikzpicture}
+
+% \rule{4cm}{0pt}
+\begin{tikzpicture}[scale=0.75]
+\foreach \m in {1,2,...,21}\draw(\m,0) -- (\m,{20*1.4-0.4});
+\foreach \n in {1,2,...,19}\draw[fill=white,line width=0.4pt](0,{1.4*\n-0.4})rectangle(21,{1.4*\n});
+\draw[thick](0,0)rectangle(21,{20*1.4-0.4});
+\end{tikzpicture}
+
+% \rule{4cm}{0pt}
+\begin{tikzpicture}[scale=0.75]
+    \foreach \m in {1,2,...,21}\draw(\m,0) -- (\m,{20*1.4-0.4});
+    \foreach \n in {1,2,...,19}\draw[fill=white,line width=0.4pt](0,{1.4*\n-0.4})rectangle(21,{1.4*\n});
+    \draw[thick](0,0)rectangle(21,{20*1.4-0.4});
+\end{tikzpicture}
+\end{document}
