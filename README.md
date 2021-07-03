@@ -1,14 +1,14 @@
-Latex templates.
+Latex templates for various type of documents
 ========
 
-## 1. UTSPH Phd proposal/thesis template (biostatistics)
 
-## 2. Latex template for general project report
 
-## 3. Template for Enlighs & Chinese writing practices
-- English: spaced lines with dashed letters
-- Chinese: 
-  - 描红纸附汉字拼音
-  - 作文纸
-  - 田字格/米字格
-  - 办公用纸
+1. Porject report: template for general project report
+2. UT thesis template: proposal/thesis template for Phd in biostatistics @ UTSPH 
+3. Writing practice: template for kids Enlighs & Chinese writing practices
+  - English: spaced lines with dashed letters
+  - 中文(zhōng wén): 
+    - 描红纸附汉字拼音
+    - 作文纸
+    - 田字格/米字格
+    - 办公用纸
